@@ -1,0 +1,17 @@
+<!-- skills.component.html -->
+<section class="skills" id="skills">
+  <div class="container">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item" *ngFor="let skill of skills">
+        <div class="skill-icon">
+          <img [src]="skill.icon" [alt]="skill.name + ' icon'">
+        </div>
+        <h3>{{ skill.name }}</h3>
+        <div class="skill-level">
+          <div class="level-bar" [style.width.%]="skill.level"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

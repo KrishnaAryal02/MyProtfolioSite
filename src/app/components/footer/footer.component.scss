@@ -1,0 +1,96 @@
+// footer.component.scss
+.footer {
+  background-color: #666;
+  color: var(--text-primary);
+  padding: 3rem 0 1rem;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &-about {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #bbb;
+      line-height: 1.6;
+    }
+  }
+
+  &-links {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: #bbb;
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &-social {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        color: #bbb;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #444;
+
+    p {
+      color: #bbb;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+}
